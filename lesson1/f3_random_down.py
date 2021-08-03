@@ -1,9 +1,9 @@
-import f1_dataset
+import f0_dataset
 from matplotlib import pyplot as plt
 import numpy
 
 test_number = 100
-xs, ys = f1_dataset.get_beans(test_number)
+xs, ys = f0_dataset.get_beans(test_number)
 plt.xlabel('volume')
 plt.ylabel('toxicity')
 w = 0.1
@@ -13,11 +13,8 @@ w = 0.1
 # plt.show()
 
 # 随机梯度下降方式
-# num = 0
 # alpha = 0.05
 # for m in range(5):
-#     num = num + 1
-#     print(num)
 #     for i in range(test_number):
 #         x = xs[i]
 #         y = ys[i]
