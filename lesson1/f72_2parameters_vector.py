@@ -20,14 +20,14 @@ def forward_propagation(X):
 plt.show_scatter_surface(X, Y, forward_propagation)
 
 
-for _ in range(5000):
+for _ in range(500):
     for i in range(m):
         Xi = X[i]
         Yi = Y[i]
         A = forward_propagation(Xi)
 
         E = (Yi - A) ** 2
-        dEdA = -2 * (Y - A)
+        dEdA = -2 * (Yi - A)
         dAdz = A * (1 - A)
         dZdW = Xi
         dAdB = 1
