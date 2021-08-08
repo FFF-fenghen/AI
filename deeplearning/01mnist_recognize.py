@@ -1,5 +1,4 @@
 from keras.datasets import mnist
-import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.optimizers import SGD
